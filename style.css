@@ -68,11 +68,13 @@ header{
     font-size: 12px;
     font-weight: 600;
 }
-
+::-webkit-scrollbar{
+    width: 0.5rem;
+}
 section{
     position: relative;
     top: 6.5rem;
-    text-align: center;
+    /*text-align: center;*/
 }
 
 .container{
@@ -99,6 +101,9 @@ section{
 .text h1{
     font-size: 1.6rem;
     font-weight: 600;
+}
+.swiper-slide{
+    text-align: center;
 }
 #categories{
     max-width: 968px;  
@@ -145,7 +150,7 @@ section{
 }
 /*css patch maker*/
 .about{
-    margin-top: 30px;
+    
     max-width: 968px;
     margin-left: 0;
     display: grid;
@@ -153,9 +158,24 @@ section{
     gap: 1.5rem;
     margin-right: 0;
 }
-.about-text span{
+.about-container{
+   margin-left: 20rem;
+
+}
+.about-container img{
+    position: relative;
+    right: 20rem;
+    padding-left: 30px;
+    width: 130%;
+    height: 40rem;
+}
+.about h1{
     text-transform: uppercase;
+    font-size: 2rem;
+}
+.about-text span{
     font-weight: 600;
+    font-size: 20px;
 }
 .about-text p{
     margin: 0.5rem 0 1rem;
@@ -197,4 +217,78 @@ section{
 .reviews h3{
     font-size: 1rem;
     font-weight: 600;
+}
+.footer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    border: 2px solid rgb(86, 143, 143);
+    border-radius: 20px;
+    padding-left: 10px;
+    box-shadow: 11px 11px 11px 11px rgb(94, 92, 92);
+}
+.footer-box{
+    display: flex;
+    flex-direction: column;
+}
+.footer-box p{
+    margin: 0.5rem 0 1rem;
+    font-size: 1rem;
+}
+.socials{
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+}
+.socials i{
+    padding: 10px;
+    color: blue;
+    border-radius: 5rem;
+    font-size: 20px;
+}
+.socials i:hover {
+    background: rgb(106, 138, 138);
+    color: #302e2e;
+    transition: 0.2s all linear;
+}
+.footer-box h2{
+    margin-bottom: 1rem;
+    font-weight: 600;
+    font-size: 1,1rem;
+}
+.footer-box a{
+    color: rgb(6, 74, 77);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.footer-box a:hover{
+    color: blue;
+}
+.footer-box form{
+    border-bottom: 1px solid green;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    column-gap: 0.5rem;
+}
+.footer-box form input{
+    background: transparent;
+    border: none;
+    outline: none;
+}
+.footer-box form input::placeholder{
+    color: #000;
+    font-size: 16px;
+}
+.footer-box form i{
+    font-size: 20px;
+    color: blue;
+    cursor: pointer;
+}
+.copyright{
+    text-align: center;
+    padding: 20px;
 }
